@@ -92,13 +92,10 @@ exports.getAllSauce = (req, res, next) => {
   };
 
   //like dislike une sauce
-<<<<<<< HEAD
-  exports.likeDislike =(req, res,next) => {
-    console.log(req);
-    console.log(res);
-=======
+
+
+
   exports.likeDislike =(req, res, next) => {
->>>>>>> e850a4e9b2f8151221c89abf760e86368d95679f
     const id = req.params.id;
     if (req.body.like === 1) {
         Sauce.updateOne(
